@@ -64,3 +64,15 @@ function getCharacterId(value) {
   // If the value isn’t found in the map then returning a random character ID
   return map[value] || Math.floor(Math.random() * 826) + 1;
 }
+// Fetching and displaying the winning character(API)
+function showCharacter(id) {
+  fetch(`https://rickandmortyapi.com/api/character/${id}`)
+    .then(res => res.json())
+    .then(char => {
+      characterBox.innerHTML = `
+        <h2>You Won! Meet ${char.name}</h2>
+        <p>Status: <strong>${char.status}</strong></p>
+        <img src="${char.image}" alt="${char.name}">
+      `;
+    });
+}
