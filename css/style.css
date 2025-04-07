@@ -1,0 +1,88 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    background: radial-gradient(circle at center, #1a1a1a, #000000);
+    padding: 30px;
+    margin: 0;
+    color: #ffd700; /* golden yellow text */
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #ffd700; /* golden */
+    text-shadow: 2px 2px 5px #000;
+  }
+  
+  button {
+    padding: 12px 28px;
+    font-size: 18px;
+    margin: 10px 0 30px;
+    background-color: #ffd700; /* gold */
+    color: #000; /* black text */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px rgba(255, 215, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e6c200;
+  }
+  
+  #card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .card-wrapper {
+    width: 100px;
+    height: 140px;
+  }
+  
+  .card-back {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.4);
+  }
+  
+  .card-back:hover {
+    transform: scale(1.1);
+  }
+  
+  #character-box {
+    margin-top: 40px;
+    padding: 20px;
+    background: #1c1c1c;
+    border-radius: 16px;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+    max-width: 340px;
+    animation: fadeIn 1s ease;
+  }
+  
+  #character-box h2 {
+    color: #ffd700;
+  }
+  
+  #character-box p {
+    color: #fff;
+  }
+  
+  #character-box img {
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
