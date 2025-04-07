@@ -30,4 +30,11 @@ function createCard(card){
   const cardImg = document.createElement("img");
   cardImg.src = "https://deckofcardsapi.com/static/img/back.png";
   cardImg.className = "card-back";
+
+  // Added click event on each card
+  cardImg.onclick = () => handleCardClick(cardImg, card);
+
+  // Added card image to the wrapper and to the container
+  cardWrapper.appendChild(cardImg);
+  container.appendChild(cardWrapper);
 }
