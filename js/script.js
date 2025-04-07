@@ -78,3 +78,18 @@ function showCharacter(id) {
 }
 // Automatically loads a new deck when the page loads
 window.onload = createNewDeck;
+
+/*
+ATTRIBUTIONS
+
+API
+1.  deck of cards: https://deckofcardsapi.com/
+2.  Rick and Morty: https://rickandmortyapi.com/documentation/#character
+
+used these page for api usage and code
+https://www.freecodecamp.org/news/how-to-fetch-data-from-an-api-using-the-fetch-api-in-javascript/
+https://www.w3schools.com/js/js_api_fetch.asp
+https://www.w3schools.com/JS/js_random.asp
+https://www.w3schools.com/jsref/event_onclick.asp
+https://www.w3schools.com/jsref/met_node_appendchild.asp
+*/
