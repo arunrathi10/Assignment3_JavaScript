@@ -14,5 +14,8 @@ function createNewDeck(){
     .then(res => res.json())
     .then(data => {
       const cards = data.cards;
+
+      winnerCard = cards[Math.floor(Math.random() * cards.length)]; // randomnly selected one winning card
+      cards.forEach(createCard); // displaying the face-down card
     });
 }
