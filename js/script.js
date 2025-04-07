@@ -8,4 +8,11 @@ let winnerCard = null; // variable to randomnly choose winning card
 function createNewDeck(){
     characterBox.innerHTML = "";
     container.innerHTML = "";
+
+    // fetching cards from deck of cards API
+    fetch("https://deckofcardsapi.com/api/deck/new/draw/?count=3")
+    .then(res => res.json())
+    .then(data => {
+      const cards = data.cards;
+    });
 }
