@@ -55,3 +55,12 @@ function handleCardClick(){
     characterBox.innerHTML = "<h2>Nope! Try Again</h2>";
   }
 }
+function getCharacterId(value) {
+  const map = {
+    "ACE": 1, "2": 22, "3": 77, "4": 101, "5": 133,
+    "6": 166, "7": 199, "8": 222, "9": 255, "10": 300,
+    "JACK": 333, "QUEEN": 366, "KING": 399
+  };
+  // If the value isn’t found in the map then returning a random character ID
+  return map[value] || Math.floor(Math.random() * 826) + 1;
+}
