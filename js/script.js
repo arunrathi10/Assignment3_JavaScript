@@ -40,7 +40,7 @@ function createCard(card){
 }
 
 // function when a card is clicked
-function handleCardClick(){
+function handleCardClick(cardImg, card){
   // Disabling all other cards from being clicked again
   document.querySelectorAll(".card-back").forEach(img => img.onclick = null);
 
