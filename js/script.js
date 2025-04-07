@@ -46,4 +46,12 @@ function handleCardClick(){
 
   // flipping the card
   cardImg.src = card.image;
+
+  // if-else to check if its wiining card or not
+  if (card.code === winnerCard.code) {
+    const id = getCharacterId(card.value);
+    showCharacter(id);
+  } else {
+    characterBox.innerHTML = "<h2>Nope! Try Again</h2>";
+  }
 }
