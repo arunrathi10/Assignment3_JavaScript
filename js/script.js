@@ -38,3 +38,12 @@ function createCard(card){
   cardWrapper.appendChild(cardImg);
   container.appendChild(cardWrapper);
 }
+
+// function when a card is clicked
+function handleCardClick(){
+  // Disabling all other cards from being clicked again
+  document.querySelectorAll(".card-back").forEach(img => img.onclick = null);
+
+  // flipping the card
+  cardImg.src = card.image;
+}
