@@ -19,3 +19,15 @@ function createNewDeck(){
       cards.forEach(createCard); // displaying the face-down card
     });
 }
+
+// created a function to display card element
+function createCard(card){
+  // for styling
+  const cardWrapper = document.createElement("div");
+  cardWrapper.className = "card-wrapper";
+
+  // card back image
+  const cardImg = document.createElement("img");
+  cardImg.src = "https://deckofcardsapi.com/static/img/back.png";
+  cardImg.className = "card-back";
+}
