@@ -76,3 +76,5 @@ function showCharacter(id) {
       `;
     });
 }
+// Automatically loads a new deck when the page loads
+window.onload = createNewDeck;
